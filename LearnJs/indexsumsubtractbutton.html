@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Sum and Subtract</title>
+</head>
+<body>
+    <input type="number" id="f_value" placeholder="enter 1st number">
+    <input type="number" id="s_value" placeholder="enter 2nd number">
+    <button onclick="sum()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mu()">*</button>
+    <button onclick="div()">/</button>
+
+    <span id="result">output will be here</span>
+    <script>
+        function sum()
+        {
+        let f_v=parseFloat(document.getElementById("f_value").value);
+        let s_v=parseFloat(document.getElementById("s_value").value);
+        let sum=f_v+s_v;
+        document.getElementById("result").innerHTML=sum;
+
+        }
+        function sub()
+        {
+        let f_v=parseFloat(document.getElementById("f_value").value);
+        let s_v=parseFloat(document.getElementById("s_value").value);
+        let sub=f_v-s_v;
+        document.getElementById("result").innerHTML=sub;
+
+        }
+        function mu()
+        {
+        let f_v=parseFloat(document.getElementById("f_value").value);
+        let s_v=parseFloat(document.getElementById("s_value").value);
+        let mu=f_v*s_v;
+        document.getElementById("result").innerHTML=mu;
+
+        }
+        function div()
+        {
+        let f_v=parseFloat(document.getElementById("f_value").value);
+        let s_v=parseFloat(document.getElementById("s_value").value);
+        let div=f_v/s_v;
+        document.getElementById("result").innerHTML=div;
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="name()" id="name" placeholder="enter your name">
+    <input type="number()" id="age" placeholder="enter your age">
+    <input type="number()" id="percent" placeholder="enter your percentage">
+    <button onclick="eli()">Check Eligibility</button>
+    <p id="text"></p>
+    <script>
+        function eli()
+          {
+        let f_age=document.getElementById("age").value;
+        let f_percent=document.getElementById("percent").value;
+        if(f_age<30 && f_percent>=50){
+        document.getElementById("text").innerHTML="you are eligible"}
+        else
+        {document.getElementById("text").innerHTML="you are not eligible"}
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning js</title>
+</head>
+<body>
+    <input onfocus="bgClrChange('f')" onblur="bgClrChange('b')" id="fName" placeholder="Full Name">
+    <button onclick="responseOnBtnClk(12,15)">Click Here</button>
+
+
+
+
+    <script>
+
+        function bgClrChange(val)
+        {
+
+            //==, !=, <, >,     >=, <=,
+            if(val=='f')
+        {
+                 document.getElementById("fName").style.backgroundColor="green";
+        }
+        else if(val=='b')
+
+        {
+            document.getElementById("fName").style.backgroundColor="red";
+        }
+        
+
+        else
+        {
+            alert("invalid Input")
+        }
+
+        }
+        
+
+
+        function responseOnBtnClk(f_value, s_value)
+        {
+            let sum=f_value+s_value;
+            alert("Sum="+sum);
+        }
+    </script>
+</body>
+</html>
